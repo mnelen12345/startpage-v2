@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #161616;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.category {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.category .links {
+    position: relative;
+    z-index: 2;
+    list-style: none;
+    padding: 0;
+}
+
+.media {
+    background: url('img/media.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.gaming {
+    background: url('img/gaming.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.work {
+    background: url('img/work.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.other {
+    width: 250px;
+    height: 450px;
+    background: url('img/right.jpg') no-repeat center center;
+    background-size: cover;
+    transform: translateY(-250px);
+}
+
+.weather-time {
+    height: 240px;
+    width: 620px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+   
+    background: rgba(0, 0, 0, 0.6);   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#time, #date, #weather, .welcome {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.links {
+    list-style: none;;
+    padding: 0;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.links li {
+    margin: 5px 0;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline
+}
+
+.weather-row {
+    display: flex;
+    justify-content: flex-start;
+    height: 240px;
+    width: 620px;
+    margin-right: 260px;
+    background: url('img/bottom.jpg') no-repeat center center ;
+    background-size: cover;
+}
+
+#bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transform: translateY(460px);
+    width: 600px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.tsb {
+    outline: none;
+    border: none;
+    background-color: #262626;
+    color: #dde1e6;
+    width: 500px;
+    font-size: 18px;
+    padding: 10px 20px;
+    flex: 1; 
+    margin-right: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: #dde1e6;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+#toggleButton {
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
